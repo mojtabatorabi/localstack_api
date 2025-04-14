@@ -60,12 +60,13 @@ aws-localstack-golang/
    ```
    git clone <repository-url>
    cd aws-localstack-golang
-   ```
+      ```
 
 2. Build and start the services
    ```
+   ./init-scripts/create-resources.sh  *run script* 
    make start
-
+ 
    cd /api
    go run main.go  // running server on port 8081
    ```
